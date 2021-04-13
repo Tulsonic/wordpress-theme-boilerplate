@@ -4,10 +4,7 @@
 Wordpress themes allow users to customize almost all design elements of the web page.
 
 * File Hiarchy
-Wordpress themes are dependent on a file hiarchy. These files will be used for set purposes by wordpress to organize the information within various pages of the site. Each of the files within the hiarchy has a preset purpose. The hiarchy of files can be visualised like so:
-
-[[./developing-wordpress-themes/themestructure.png]]
-
+Wordpress themes are dependent on a file hiarchy. These files will be used for set purposes by wordpress to organize the information within various pages of the site. Each of the files within the hiarchy has a preset purpose. 
 
 ** The Wordpress Theme Template
 *** Files
