@@ -1,0 +1,75 @@
+#+title: Developing Wordpress Themes
+
+* Wordpress Themes
+Wordpress themes allow users to customize almost all design elements of the web page.
+
+* File Hiarchy
+Wordpress themes are dependent on a file hiarchy. These files will be used for set purposes by wordpress to organize the information within various pages of the site. Each of the files within the hiarchy has a preset purpose. The hiarchy of files can be visualised like so:
+
+[[./developing-wordpress-themes/themestructure.png]]
+
+
+** The Wordpress Theme Template
+*** Files
+The wordpress theme template I created comes with the following files and they surve the following functions.
+
+**** index.php
+*Required*. This is the basic fallback template file. If no other specific template file is stated, this will be displayed.
+
+**** style.css
+*Required*. This file contains the information header (info in the theme selection page) of the theme. It is the main stylesheet for the website.
+
+**** comments.php
+Contains all the logic to pull comments out of the database and display in site. 
+
+**** header.php
+Contains meta information for the site, stylesheets and scripts. Essentially the header part of an html site. Can also include navbars.
+
+**** footer.php
+Generates the footer of the site similar header.php
+
+**** single.php
+Template used to display single post when requested by user.
+
+**** front-page.php
+Template for the front page of the site.
+
+**** page.php
+Template used for individual pages.
+
+**** archive.php
+Template Used when user request posts by category like dates or authors.
+
+**** search.php
+Template used for search results.
+
+**** 404.php
+Template Used When no post or page is found that matches users request.
+
+**** functions.php
+This file is used to add unique, plugin like features to the theme. Can be thought of as a small plugin specific to the theme. 
+
+**** readme.txt
+Any extra information for the theme.
+
+*** Folders
+The template also comes with the following folders.
+
+**** assets
+This is folder is used to store external assets. The folder has the following sublfolders:
+- images
+- scss
+- js
+- fonts
+
+**** classes
+write classes to overwrite wordpres functinoality
+
+**** inc (includes)
+Extra php files to include to avoid cluttering the functinos.php.
+
+**** template-parts
+Spliting smaller parts of the template
+
+**** templates
+Page templates
